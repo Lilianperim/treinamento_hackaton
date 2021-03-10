@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <script>
+       function CliquenoBotao(){
+            alert ("Obrigada por nos visitar!");
+        }
+        alert ("Olá");
+
+        function atualizacaoTexto(){
+            let input = document.getElementById("meuinput");
+            let p = document.getElementById("para");
+
+            p.textContent = input.value;
+
+            console.log("oi");
+        }
+       
+    </script>
+
+    <style>
+        body{
+            background-color: gray;
+        }
+        h1{
+            font-family:fantasy;
+            color:chartreuse;
+            font-size: 30px;
+            font-style:inherit;
+        }
+        p{
+            text-align: center; /**alinhamento**/
+        }
+        img{
+            max-width: 100%;
+            border: solid 3px white;
+            padding: 2px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .margem-minima {
+            margin-top: 10px;
+            margin-bottom: 10px; 
+        }
+        .margem-minima input,
+        .margem-minima select,
+        .margem-minima button{
+            width: 50vw;
+        }
+    </style>
+
+  </head>
+  <body>
+
+    <div>
+      <h1>Cadastro de clientes</h1>  <!--Elemento padrão de título-->
+     
+      <p id = "para">Qualquer texto</p> <!--paragrafo qualquer texto-->
+      
+      <span>Texto solto na página</span>
+
+      <div class="margem-minima"> <!--divide sessões para caracteriza-las separado-->
+    <img src="camaleão Logotipo.png" /><!--inserir imagem-->
+    </div>
+    <div class="margem-minima">
+    <a  href="https://iteris2.sharepoint.com/">Acesse aqui</a>  <!--tag de link-->
+    </div>
+
+    <div class="margem-minima">  <!--ELEMENTOS DE CONTROLE-->
+    <input id= "meuinput" type= "text" oninput= "atualizacaoTexto()"/> <!--tipos de entrada de dados-->
+    </div>
+    <div class="margem-minima">
+      <select>
+        <option>Opção 1</option>
+        <!--para selecionar opção-->
+        <option>Opção 2</option>
+      </select>
+      <div>
+        <div class="margem-minima">
+      <button onclick="CliquenoBotao()">Aperte aqui</button> <!--botao-->
+    </div>
+  </body>
+</html>
